@@ -21,9 +21,6 @@ namespace ListaDeInventario
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Escolha uma fruta(Abacaxi, Limao, Maca, Tomate, Melancia, Pera, Pessego, Laranja, Banana, Antoanne)");
-            string texto = Console.ReadLine();
-
             Itens Fruta1 = new Itens("Abacaxi");
             Itens Fruta2 = new Itens("Limao");
             Itens Fruta3 = new Itens("Maca");
@@ -44,37 +41,41 @@ namespace ListaDeInventario
             Fruta7.next = Fruta8;
             Fruta8.next = Fruta9;
             Fruta9.next = Fruta10;
-
-            Itens currentfruta = Fruta1;
-            int id = 0;
-
-            while (currentfruta != null)
+            while (true)
             {
-                id++;
+                Console.WriteLine("Escolha uma fruta(Abacaxi, Limao, Maca, Tomate, Melancia, Pera, Pessego, Laranja, Banana, Antoanne)");
+                string texto = Console.ReadLine();
+                Itens currentfruta = Fruta1;
+                int id = 0;
 
-                if (texto != null && texto == currentfruta.name)
+                while (currentfruta != null)
                 {
-                    Console.WriteLine("Acertô mizeravi, id: " + id);
-                    id = 0;
-                    break;
+                    id++;
+
+                    if (texto != null && texto == currentfruta.name)
+                    {
+                        Console.WriteLine("Acertô mizeravi, id: " + id);
+                        id = 0;
+                        break;
+                    }
+
+                    else if (currentfruta == null)
+                    {
+                        Console.WriteLine("Não encontrei, cara, foi mal");
+                        id = 0;
+                        break;
+                    }
+                    else if (texto != currentfruta.name && id >= 10)
+                    {
+                        Console.WriteLine("Não encontrei, cara, foi mal");
+                        id = 0;
+                        break;
+                    }
+                    currentfruta = currentfruta.next;
                 }
-            
-                else if (currentfruta == null)
-                {
-                    Console.WriteLine("Não encontrei, cara, foi mal");
-                    id = 0;
-                    break;
-                }
-                else if (texto != currentfruta.name && id >= 10)
-                {
-                    Console.WriteLine("Não encontrei, cara, foi mal");
-                    id = 0;
-                    break;
-                }
-                currentfruta = currentfruta.next;
+
+                Console.ReadKey();
             }
-
-            Console.ReadKey();
         }
     }
 }
