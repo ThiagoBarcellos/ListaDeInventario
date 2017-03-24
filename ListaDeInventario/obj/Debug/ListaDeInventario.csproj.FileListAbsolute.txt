@@ -1,0 +1,6 @@
+c:\users\andressa.marques\documents\visual studio 2015\Projects\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.exe.config
+c:\users\andressa.marques\documents\visual studio 2015\Projects\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.exe
+c:\users\andressa.marques\documents\visual studio 2015\Projects\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.pdb
+c:\users\andressa.marques\documents\visual studio 2015\Projects\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.csprojResolveAssemblyReference.cache
+c:\users\andressa.marques\documents\visual studio 2015\Projects\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.exe
+c:\users\andressa.marques\documents\visual studio 2015\Projects\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.pdb
