@@ -55,15 +55,23 @@ namespace ListaDeInventario
                 if (texto != null && texto == currentfruta.name)
                 {
                     Console.WriteLine("Acertô mizeravi, id: " + id);
+                    id = 0;
+                    break;
                 }
             
                 else if (currentfruta == null)
                 {
                     Console.WriteLine("Não encontrei, cara, foi mal");
                     id = 0;
+                    break;
+                }
+                else if (texto != currentfruta.name && id >= 10)
+                {
+                    Console.WriteLine("Não encontrei, cara, foi mal");
+                    id = 0;
+                    break;
                 }
                 currentfruta = currentfruta.next;
-
             }
 
             Console.ReadKey();
