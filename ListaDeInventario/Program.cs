@@ -21,6 +21,8 @@ namespace ListaDeInventario
     {
         static void Main(string[] args)
         {
+            bool loop = true;
+
             Itens Fruta1 = new Itens("Abacaxi");
             Itens Fruta2 = new Itens("Limao");
             Itens Fruta3 = new Itens("Maca");
@@ -41,40 +43,65 @@ namespace ListaDeInventario
             Fruta7.next = Fruta8;
             Fruta8.next = Fruta9;
             Fruta9.next = Fruta10;
-            while (true)
+
+
+            while (loop == true)
             {
                 Console.WriteLine("Escolha uma fruta(Abacaxi, Limao, Maca, Tomate, Melancia, Pera, Pessego, Laranja, Banana, Antoanne)");
                 string texto = Console.ReadLine();
                 Itens currentfruta = Fruta1;
                 int id = 0;
 
-                while (currentfruta != null)
+                int[] quantidade = new int[10] {10,10,10,10,10,10,10,10,10,10};
+
+                if (texto == "Sair do inventario")
                 {
-                    id++;
-
-                    if (texto != null && texto == currentfruta.name)
-                    {
-                        Console.WriteLine("Acertô mizeravi, id: " + id);
-                        id = 0;
-                        break;
-                    }
-
-                    else if (currentfruta == null)
-                    {
-                        Console.WriteLine("Não encontrei, cara, foi mal");
-                        id = 0;
-                        break;
-                    }
-                    else if (texto != currentfruta.name && id >= 10)
-                    {
-                        Console.WriteLine("Não encontrei, cara, foi mal");
-                        id = 0;
-                        break;
-                    }
-                    currentfruta = currentfruta.next;
+                    loop = false;
+                    break;
+                }
+                else if(texto == "limpar tela")
+                {
+                    Console.Clear();
                 }
 
-                Console.ReadKey();
+                else
+                {
+                    while (currentfruta != null)
+                    {
+                        id++;
+
+                        if (texto != null && texto == currentfruta.name)
+                        {
+                            Console.WriteLine("Acertô mizeravi, id: " + id);
+                           /* for (int i = 1; i <= quantidade.Length; i++)
+                            {
+                                if (id == i)
+                                {
+                                    quantidade[i] -= 1;
+                                    Console.WriteLine(quantidade[i]);
+                                }
+                            }*/
+                            id = 0;
+                            break;
+                        }
+
+                        else if (currentfruta == null)
+                        {
+                            Console.WriteLine("Não encontrei, cara, foi mal");
+                            id = 0;
+                            break;
+                        }
+                        else if (texto != currentfruta.name && id >= 10)
+                        {
+                            Console.WriteLine("Não encontrei, cara, foi mal");
+                            id = 0;
+                            break;
+                        }
+                        currentfruta = currentfruta.next;
+                    }
+
+                    Console.ReadKey();
+                }
             }
         }
     }

@@ -10,3 +10,9 @@ C:\Users\andressa.marques\Desktop\ListaDeInventario\ListaDeInventario\obj\Debug\
 C:\Users\andressa.marques\Desktop\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.exe
 C:\Users\andressa.marques\Desktop\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.pdb
 C:\Users\andressa.marques\Desktop\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.csprojResolveAssemblyReference.cache
+C:\Users\thiago.mattos\Desktop\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.exe.config
+C:\Users\thiago.mattos\Desktop\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.exe
+C:\Users\thiago.mattos\Desktop\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.pdb
+C:\Users\thiago.mattos\Desktop\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.exe
+C:\Users\thiago.mattos\Desktop\ListaDeInventario\ListaDeInventario\bin\Debug\ListaDeInventario.pdb
+C:\Users\thiago.mattos\Desktop\ListaDeInventario\ListaDeInventario\obj\Debug\ListaDeInventario.csprojResolveAssemblyReference.cache
